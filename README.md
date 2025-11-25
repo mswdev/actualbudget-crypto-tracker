@@ -1,7 +1,8 @@
 # ActualBudget Crypto Tracker
-Preface: I made this as a very basic tool for my personal ActualBudget usage and may not be flexible for your setup. This nor ActualBudget is designed for full crypto portfolio tracking. If you are looking for something more advanced I recommend something like [Ghostfolio](https://github.com/ghostfolio/ghostfolio). This tool does not sync your live qauntity holdings, but I'm open to contributors if someone wants to add support for pulling balance holdings via wallet addresses from blockchain.com or similar.
 
 Automatically sync your cryptocurrency portfolio values with [Actual Budget](https://actualbudget.com/) by tracking real-time prices from CoinGecko and creating adjustment transactions to reflect current market values.
+
+> **Note**: This is a basic tool designed for personal use. It updates account values based on manually configured quantities and live prices—it does not sync holdings directly from wallets or exchanges. For comprehensive portfolio tracking with automatic balance syncing, consider [Ghostfolio](https://github.com/ghostfolio/ghostfolio). Contributions welcome for adding wallet address integration!
 
 ## Overview
 
