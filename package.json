@@ -1,0 +1,27 @@
+{
+  "name": "actualbudget-crypto-tracker",
+  "version": "1.0.0",
+  "description": "Basic script to track your crypto investments in ActualBudget.",
+  "homepage": "https://github.com/mswdev/actualbudget-crypto-tracker#readme",
+  "bugs": {
+    "url": "https://github.com/mswdev/actualbudget-crypto-tracker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mswdev/actualbudget-crypto-tracker.git"
+  },
+  "license": "ISC",
+  "author": "mswdev",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "main": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@actual-app/api": "^25.11.0",
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "node-cron": "^4.2.1"
+  }
+}

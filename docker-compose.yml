@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  crypto-tracker:
+    build: .
+    container_name: actualbudget-crypto-tracker
+    restart: unless-stopped
+
+    # Option 1: Use .env file (recommended)
+    # Simply create a .env file in the same directory as this docker-compose.yml
+    env_file:
+      - .env
+
+    # Option 2: Define environment variables directly here
+    # Uncomment and configure the variables below to override .env file
+    # environment:
+    #   ACTUAL_SERVER_URL: 'https://your-actual-server:5006'
+    #   ACTUAL_PASSWORD: 'your_server_password'
+    #   ACTUAL_SYNC_ID: 'your_sync_id'
+    #   CRON_SCHEDULE: '0 0 * * *'
+    #   CRYPTO_ASSETS: 'bitcoin:0.5:Bitcoin;ethereum:2:Ethereum Wallet'
+    #   NODE_TLS_REJECT_UNAUTHORIZED: '0'
+
+    # Optional: Mount .env file if you want to keep it separate
+    # volumes:
+    #   - ./.env:/app/.env:ro
